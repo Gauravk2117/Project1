@@ -5,33 +5,35 @@ import java.util.Scanner;
 public class EventDetails {
 
 	public static void main(String[] args) {
-		String s;
-		String a;
-		int b;
+		String nameOfTheEvent;
+		String typeOfTheEvent;
+		int numberOfPeopleExpected;
+		char itIsAPaidEntry;
+		double projectExpensesForTheEvent;
 		
 		Scanner sc = new Scanner (System.in);
 	    System.out.print ("Enter the name of event");
-	    s=sc.nextLine();
+	    nameOfTheEvent=sc.nextLine();
 	    
 	    System.out.print ("Enter the type of the event");
-	    a=sc.nextLine();
+	    typeOfTheEvent=sc.nextLine();
 	    
 	    System.out.print ("Enter the number of people expected");
-	    b=sc.nextInt();
+	    numberOfPeopleExpected=sc.nextInt();
 	    
 	    System.out.print ("It is a paid entry?(Type Y or N)");
-	    char c =sc.next().charAt(0);
+	     itIsAPaidEntry =sc.next().charAt(0);
 	    
 	    System.out.print ("Enter thr projected expenses( in lakhs) for this event");
-	    double d=sc.nextDouble();
+	    projectExpensesForTheEvent=sc.nextDouble();
 	    
 	    
 	    
-	    System.out.print ("Event Name:" +s+"\n");
-	    System.out.print ("Event Type:" +a+"\n");
-	    System.out.print ("Expected Count:" +b+"\n");
-	    System.out.print ("Paid Entry:" +c+"\n");
-	    System.out.print ("Projected Expense:" +d+"L"+"\n");
+	    System.out.print ("Event Name:" +nameOfTheEvent+"\n");
+	    System.out.print ("Event Type:" +typeOfTheEvent+"\n");
+	    System.out.print ("Expected Count:" +numberOfPeopleExpected+"\n");
+	    System.out.print ("Paid Entry:" +itIsAPaidEntry+"\n");
+	    System.out.print ("Projected Expense:" +projectExpensesForTheEvent+"L"+"\n");
 	    
 	    
 
